@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        .Titlereport {
+            text-align: center;
+            font-size color:darkslateblue;
+            background-color: lightgrey;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../plugin/layui/css/layui.css" media="all">
+</head>
+<body>
+    <div class="layui-card">
+        <div class="layui-card-header">Generate Shop Sales Report</div>
+        <div class="layui-card-body">
+
+            <form class="layui-form" action="Get_Shop_Sales_Report.php">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">Enter Shop ID</label>
+                    <div class="layui-input-block">
+                        <input type="hidden" name="id">
+                        <input type="text" name="shopID" required lay-verify="required" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit lay-filter="userForm">Generate</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../../../plugin/layui/layui.js"></script>
+    <script src="../../../js/jquery.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <div class="layui-card">
+        <div class="layui-card-header">Generated Report</div>
+        <div class="layui-card-body">
+            <table id="layTable" lay-filter="test"></table>
+
+            <link rel="stylesheet" href="../plugin/layui/css/layui.css">
+            <script src="../plugin/layui/layui.js"></script>
+            <script type="text/javascript" src="../js/jquery.js"></script>
+
+            <script type="text/javascript">
+                layui.use(['table'], function () {
+                    var table = layui.table
+
+                    layui.table.render({
+                        elem: '#layTable'
+                        , height: 500
+                        , page: false
+                        , cols: [[
+                            { field: 'Month', title: 'Month' },
+                            { field: 'Quarter', title: 'Quarter' },
+                            { field: 'Year', title: 'Year' },
+                            { field: 'Sales_Revenue', title: 'SalesRevenue' },
+                            { field: 'Admissions', title: 'Admissions' },
+                            { field: 'Expenses', title: 'Expenses' },
+                            { field: 'Total_Revenue', title: 'TotalRevenue' },
+                        ]]
+                        , data: [
+                            {
+                                Month: 'null',
+                                Quarter: 'null',
+                                Year: 'null',
+                                Sales_Revenue: 'null',
+                                Admissions: 'null',
+                                Expenses: 'null',
+                                Total_Revenue: 'null',
+                            }
+                        ]
+                    })
+                });
+
+            </script>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

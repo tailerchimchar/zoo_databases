@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+    <h1>Add New Employee</h1>
+    <form method="post" action="<?php echo $_POS htmlspecialchars($_SERVER[" PHP_SELF"]);?>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="mInit">Middle Initial:</label><br>
+        <input type="text" id="mInit" name="mInit"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="employeeID">ID Number:</label><br>
+        <input type="text" id="employeeID" name="employeeID"><br>
+        <label for="jobTitle">Job Title:</label><br>
+        <input type="text" id="jobTitle" name="jobTitle"><br>
+        <label for="Phone Number">Phone Number:</label><br>
+        <input type="text" id="Phone Number" name="Phone Number"><br>
+        <label for="Username">Username:</label><br>
+        <input type="text" id="Username" name="Username"><br>
+        <label for="Password">Password:</label><br>
+        <input type="text" id="Password" name="Password"><br>
+        <label for="Salary">Salary:</label><br>
+        <input type="text" id="Salary" name="Salary"><br>
+        <br><br>
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+    <?php
+    ?>
+</body>
+</html>
